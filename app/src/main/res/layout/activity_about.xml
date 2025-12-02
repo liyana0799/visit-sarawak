@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:paddingTop="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/aboutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="About"
+        app:titleCentered="true"
+        app:titleTextColor="@android:color/white"
+        app:contentInsetStart="0dp"
+        app:navigationContentDescription="@string/navigate_up" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/aboutTitle"
+        android:text="@string/visit_sarawak"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Student's Name -->
+    <TextView
+        android:id="@+id/aboutName"
+        android:text="@string/your_name_here"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Unique Variation Code -->
+    <TextView
+        android:id="@+id/aboutCode"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Text Size toggle -->
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/textSwitch"
+        android:text="Large Text"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Sample text -->
+    <TextView
+        android:id="@+id/sampleText"
+        android:text="@string/this_is_sample_text_affected_by_the_toggle"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

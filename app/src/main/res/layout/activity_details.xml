@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/detailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingTop="18dp"
+        app:navigationIcon="@drawable/ic_back"
+        app:navigationContentDescription="@string/navigate_up"
+        android:background="?attr/colorPrimary"
+        app:titleCentered="true"
+        app:titleTextColor="@android:color/white" />
+
+    <!-- Spot Image -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/detailImage"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/spot_image_description"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/detailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Operating Hour Label -->
+    <TextView
+        android:text="@string/operating_hour"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Time -->
+    <TextView
+        android:id="@+id/detailTime"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Divider Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/colorOutline"/>
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/detailDesc"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Stacked Buttons -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Try It Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tryButton"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:text="@string/try_it"
+            android:textSize="14sp"
+            android:minHeight="0dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            app:icon="@drawable/ic_navigation_24"
+            app:iconPadding="8dp"
+            app:cornerRadius="12dp" />
+
+        <!-- Share Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/shareButton"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:text="@string/share"
+            android:textSize="14sp"
+            android:minHeight="0dp"
+            android:backgroundTint="?attr/colorSecondary"
+            android:textColor="@android:color/white"
+            app:icon="@drawable/ic_share_24"
+            app:iconPadding="8dp"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>

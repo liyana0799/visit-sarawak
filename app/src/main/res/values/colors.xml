@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="md_theme_primary">#2962FF</color>   <!-- Bright blue -->
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+
+    <color name="md_theme_primaryContainer">#D6E2FF</color>
+    <color name="md_theme_onPrimaryContainer">#001A43</color>
+
+    <color name="md_theme_secondary">#4E6FD6</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+
+    <color name="md_theme_background">#FFFFFF</color>
+    <color name="md_theme_onBackground">#000000</color>
+
+</resources>
