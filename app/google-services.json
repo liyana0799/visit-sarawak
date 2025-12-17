@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "422168792434",
+    "project_id": "visit-sarawak-94081",
+    "storage_bucket": "visit-sarawak-94081.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422168792434:android:5435c589b95d57f4d7a1eb",
+        "android_client_info": {
+          "package_name": "com.example.visitsarawak"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxnKsLkU5PF4rBOgXcYuPwZ80TyLTvkUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422168792434:android:189436957fcf4d66d7a1eb",
+        "android_client_info": {
+          "package_name": "com.example.visitsarawak2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxnKsLkU5PF4rBOgXcYuPwZ80TyLTvkUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
