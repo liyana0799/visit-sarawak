@@ -9,7 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 class SpotAdapter(
     private val spots: List<Spot>,
-    private val onClick: (Spot) -> Unit
+    private val onClick: (Spot) -> Unit,
+    private val onLongClick: (Spot) -> Unit
 ) : RecyclerView.Adapter<SpotAdapter.SpotViewHolder>() {
 
     inner class SpotViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -26,11 +27,26 @@ class SpotAdapter(
     override fun onBindViewHolder(holder: SpotViewHolder, position: Int) {
         val spot = spots[position]
         holder.title.text = spot.title
-        holder.image.setImageResource(spot.imageRes)
 
-        holder.image.contentDescription = spot.title
+        val context = holder.itemView.context
+        val imageId = context.resources.getIdentifier(
+            spot.imageRef,
+            "drawable",
+            context.packageName
+        )
+        holder.image.setImageResource(imageId)
+        holder.image.contentDescription = "Image of ${spot.title}"
 
-        holder.itemView.setOnClickListener { onClick(spot) }
+        // Short click - view details
+        holder.itemView.setOnClickListener {
+            onClick(spot)
+        }
+
+        // Long click - edit
+        holder.itemView.setOnLongClickListener {
+            onLongClick(spot)
+            true
+        }
     }
 
     override fun getItemCount() = spots.size

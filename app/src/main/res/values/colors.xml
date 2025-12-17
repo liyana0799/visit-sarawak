@@ -11,5 +11,6 @@
 
     <color name="md_theme_background">#FFFFFF</color>
     <color name="md_theme_onBackground">#000000</color>
+    <color name="grey">#404040</color>
 
 </resources>

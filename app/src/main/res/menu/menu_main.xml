@@ -9,4 +9,11 @@
         android:contentDescription="Information about the application"
         app:showAsAction="ifRoom" />
 
+    <item
+        android:id="@+id/action_logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout_24"
+        android:contentDescription="Logout"
+        app:showAsAction="ifRoom"/>
+
 </menu>

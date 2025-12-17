@@ -7,6 +7,7 @@ import android.util.TypedValue
 import android.widget.TextView
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.materialswitch.MaterialSwitch
+import com.google.firebase.auth.FirebaseAuth
 
 class AboutActivity : AppCompatActivity() {
 
@@ -25,9 +26,10 @@ class AboutActivity : AppCompatActivity() {
         val aboutTitle = findViewById<TextView>(R.id.aboutTitle)
         val aboutName = findViewById<TextView>(R.id.aboutName)
         val aboutCode = findViewById<TextView>(R.id.aboutCode)
+        val user = FirebaseAuth.getInstance().currentUser
+        aboutName.text = user?.displayName ?: user?.email ?: "Guest"
 
         aboutTitle.text = getString(R.string.visit_sarawak)
-        aboutName.text = getString(R.string.your_name_here)
 
         // Unique Variation Code
         aboutCode.text = """
@@ -37,7 +39,9 @@ class AboutActivity : AppCompatActivity() {
             Layout: 2-column Grid
             Accent: Blue
             Extra field: Time
+            Default Sort: Time (Ascending)
             Button: "Try it"
+            FAB: Quick Add (pre-fills image field)
         """.trimIndent()
 
         // Large Text toggle

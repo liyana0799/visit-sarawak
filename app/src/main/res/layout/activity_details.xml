@@ -1,122 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:paddingBottom="60dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    <!-- Toolbar -->
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/detailToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:paddingTop="18dp"
+        android:background="?attr/colorPrimary"
         app:navigationIcon="@drawable/ic_back"
         app:navigationContentDescription="@string/navigate_up"
-        android:background="?attr/colorPrimary"
         app:titleCentered="true"
         app:titleTextColor="@android:color/white" />
 
-    <!-- Spot Image -->
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/detailImage"
+    <!-- Progress Bar for loading -->
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="@string/spot_image_description"
-        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium" />
+        android:layout_height="match_parent">
 
-    <!-- Title -->
-    <TextView
-        android:id="@+id/detailTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="8dp"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        <ProgressBar
+            android:id="@+id/detailProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
 
-    <!-- Operating Hour Label -->
-    <TextView
-        android:text="@string/operating_hour"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <!-- Time -->
-    <TextView
-        android:id="@+id/detailTime"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingBottom="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    <!-- Divider Line -->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="?attr/colorOutline"/>
+                <ImageView
+                    android:id="@+id/detailImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/spot_image_description" />
 
-    <!-- Description -->
-    <TextView
-        android:id="@+id/detailDesc"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"/>
+                <TextView
+                    android:id="@+id/detailTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
-    <!-- Stacked Buttons -->
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/detailSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:textColor="?android:attr/textColorSecondary" />
 
-        <!-- Try It Button -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/tryButton"
-            android:layout_width="160dp"
-            android:layout_height="48dp"
-            android:text="@string/try_it"
-            android:textSize="14sp"
-            android:minHeight="0dp"
-            android:layout_marginBottom="12dp"
-            android:backgroundTint="?attr/colorPrimary"
-            android:textColor="@android:color/white"
-            app:icon="@drawable/ic_navigation_24"
-            app:iconPadding="8dp"
-            app:cornerRadius="12dp" />
+                <TextView
+                    android:text="Duration:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-        <!-- Share Button -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/shareButton"
-            android:layout_width="160dp"
-            android:layout_height="48dp"
-            android:text="@string/share"
-            android:textSize="14sp"
-            android:minHeight="0dp"
-            android:backgroundTint="?attr/colorSecondary"
-            android:textColor="@android:color/white"
-            app:icon="@drawable/ic_share_24"
-            app:iconPadding="8dp"
-            app:cornerRadius="12dp" />
+                <TextView
+                    android:id="@+id/detailTime"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"/>
 
-    </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="?attr/colorOutline"/>
+
+                <TextView
+                    android:id="@+id/detailDescription"
+                    android:textSize="18sp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center_horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tryButton"
+                        android:layout_width="160dp"
+                        android:layout_height="48dp"
+                        android:text="@string/try_it"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="12dp"
+                        android:backgroundTint="?attr/colorPrimary"
+                        android:textColor="@android:color/white"
+                        app:icon="@drawable/ic_navigation_24"
+                        app:iconPadding="8dp"
+                        app:cornerRadius="12dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/shareButton"
+                        android:layout_width="160dp"
+                        android:layout_height="48dp"
+                        android:text="@string/share"
+                        android:textSize="14sp"
+                        android:backgroundTint="?attr/colorSecondary"
+                        android:textColor="@android:color/white"
+                        app:icon="@drawable/ic_share_24"
+                        app:iconPadding="8dp"
+                        app:cornerRadius="12dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
 
 </LinearLayout>
-    </ScrollView>

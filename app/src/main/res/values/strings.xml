@@ -3,60 +3,12 @@
     <string name="app_name">Visit Sarawak</string>
 
     <string name="spot_image">Tourist spot image</string>
-    <string name="operating_hour">Operating Hour:</string>
+    <string name="duration">Duration:</string>
     <string name="try_it">Try it</string>
     <string name="share">Share</string>
     <string name="visit_sarawak">Visit Sarawak</string>
     <string name="your_name_here">Puteri Nur Liyana Imanina Abdullah</string>
     <string name="this_is_sample_text_affected_by_the_toggle">This is sample text affected by the toggle.</string>
-
-    <string name="kuching_waterfront_time">Open 24 Hours</string>
-    <string name="bako_time">8:00 AM - 5:00PM (Daily), (The boat terminal only operates from 8:00 AM to 5:00 PM)</string>
-    <string name="semenggoh_wildlife_time">Visiting Hours: 8:00 AM - 10:00 AM, 2:00 PM - 4:00 PM (Daily), Feeding Times: 9:00 AM - 3:00 PM </string>
-    <string name="cultural_village_time">9:00 AM - 5:00 PM (daily)</string>
-    <string name="mulu_cave_time">8: 00 AM - 5:00 PM (Daily)</string>
-    <string name="damai_beach_time"> Open 24 Hours</string>
-    <string name="cat_museum_time">9:00 AM - 5:00 PM (daily)</string>
-    <string name="crocodile_farm_time">9:00 AM - 5:00 PM (daily), Last Admission: 4:30 PM</string>
-    <string name="fairy_cave_time">9:00 AM - 3:00 PM (Tuesday - Sunday) </string>
-    <string name="upside_down_time">9:30 AM - 6:00 PM, Last Admission: 5:30 PM</string>
-
-    <string name="kuching_waterfront_desc">A scenic riverside promenade stretching along the Sarawak River, the Kuching Waterfront is one
-    of the city\'s most iconic and relaxing public spaces. Visitors can stroll along the well-lit walkway, enjoy local street food and watch
-    traditional boats glide across the calm water. The area offers stunning nighttime views of the State Legislative Assembly Building and
-    the Darul Hana Bridge, making it a perfect spot for photography, evening walks and cultural outings.</string>
-    <string name="bako_desc">As Sarawak\'s oldest national park, Bako offers an incredible mix of Sarawak\'s natural wonders all in one location.
-    The park features dramatic coastlines, mangrove forests, jungle trail and unique rock formations shaped by millions of years of erosion.
-    It is also home to the famous proboscis monkeys, silvered leaf monkeys, wild boars and a wide variety of tropical plants. Adventurous
-    visitors can explore multiple hiking trails, each offering different scenic experiences and viewpoints.</string>
-    <string name="semenggoh_wildlife_desc">Semenggoh Wildlife Centre is a long established sanctuary dedicated to the rehabilitation and
-    protection of semi-wild orangutans. During scheduled feeding times, visitors have a rare opportunity to observe these gentle primates
-    emerging from the surrounding rainforest to feed. The centre prioritizes conservation and environmental education, giving visitors
-    valuable insight into the challenges and success stories of orangutan rehabilitation in Sarawak.</string>
-    <string name="cultural_village_desc">Known as the "Living Museum", Sarawak Cultural Village brings the rich traditions of Sarawak\'s ethnic
-    tribes to life. Visitors can explore authentic longhouses representing the Iban, Bidayuh, Orang Ulu, Penan, Malay and Melanau communities. Each
-    house showcases traditional crafts, music, dance and lifestyles. The village\'s famous cultural performance is a must-see, featuring
-    impressive cultural dances, ritual and storytelling that highlight Sarawak\'s diverse heritage.</string>
-    <string name="mulu_cave_desc">A UNESCO World Heritage Site, the Mulu Caves are  internationally renowned for their vast chambers, underground
-    rivers and limestone formations. The park is home to the world-famous Deer Cave, the breathtaking Clearwater Cave and the massive Sarawak Chamber.
-    Visitors can witness millions of bats flying out at dusk in a spectacular natural phenomenon. The caves, combined with lush rainforest and
-    elevated walkways, make Mulu one of the most extraordinary natural attractions in Malaysia.</string>
-    <string name="damai_beach_desc">Located near Mount Santubong, Damai Beach is a peaceful coastal retreat offering golden sands, gentle waves
-    and panoramic sea views. It\'s a popular getaway for both relaxation and water activities such as kayaking and paddleboarding. The beach is
-    known for its tranquil atmosphere, making it an ideal spot for families, couples and anyone seeking a break from the city\'s bustle.
-    Sunsets here are particularly stunning.</string>
-    <string name="cat_museum_desc">As the world\'s first museum dedicated entirely to cats, the Cat Museum in Kuching celebrates the cultural and
-    historical significance of cats throughout humanity. The museum houses nearly 4,000 exhibits, including feline art, memorabilia, sculptures,
-    photographs and even rare artifacts. It is a fun quirky attraction that draws both cat lovers and curious visitors looking for a unique experience.</string>
-    <string name="crocodile_farm_desc">Jong\'s Crocodile Farm is one of the largest and oldest crocodile breeding farms in Malaysia. It hosts thousands
-    of crocodiles of various species and ages, from baby hatchlings to fully grown adults. The farm also showcases other animals such as deer, birds and
-    reptiles. The highlight is the exciting crocodile feeding show, where visitors can observe massive crocodiles leaping out of the water with incredible power.</string>
-    <string name="fairy_cave_desc">Fairy Caves features a dramatic entrance that leads visitors into a huge cavern filled with limestone formations, mossy surfaces,
-    and cool air. The cave\'s unique rock structures resemble mythical beings, giving rise to its enchanting name. The climb to the entrance offers scenic views of
-    surrounding greenery and inside, adventurous explorers can enjoy a mysterious, peaceful environment illuminated by beams of natural light.</string>
-    <string name="upside_down_desc">This quirky attractions flip reality, like literally! Everything inside the Upside Down House is built upside-down, from the
-    furniture to the decorations, creating a fun and surreal environment. Visitors can walk through creatively designed rooms and snap amusing photos that appear
-    gravity-defying. It\'s a delightful stop for families, couples and anyone looking for a memorable and entertaining experience.</string>
 
     <string name="back_button">Back</string>
     <string name="spot_image_description">Image of the tourist spot</string>

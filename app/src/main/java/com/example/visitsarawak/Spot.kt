@@ -1,8 +1,11 @@
 package com.example.visitsarawak
 
 data class Spot(
-    val title: String,
-    val imageRes: Int,
-    val description: String,
-    val time: String
+    val id: String = "",
+    val title: String = "",
+    val subtitle: String = "",
+    val description: String = "",
+    val imageRef: String = "",
+    val time: String = "",
+    val ownerUid: String = ""
 )
